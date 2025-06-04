@@ -181,7 +181,9 @@ cobblemon:
                     permissions:
                         - flag=interact-block-secondary, target=cobblemon:fossil_analyzer, source=minecraft:player
                         - flag=interact-block-secondary, target=cobblemon:restoration_tank, source=minecraft:player
-                        - flag=interact-block-secondary, source=minecraft:player, target=cobblemon:monitor
+                        - flag=interact-block-secondary, target=cobblemon:monitor, source=minecraft:player
+                        - flag=interact-inventory, target=cobblemon:fossil_analyzer, source=minecraft:player
+                        - flag=interact-inventory, target=cobblemon:restoration_tank, source=minecraft:player
 
             # Whether definition group is enabled.
             enabled: true
