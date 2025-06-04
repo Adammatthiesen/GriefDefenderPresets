@@ -1,0 +1,36 @@
+{
+  "flag-descriptions": {
+    "player-attack-pokemon": "Controls whether players can attack Pokemon",
+    "pokemon-spawning": "Controls whether Pokemon can spawn",
+    "throw-any-pokeball": "Controls whether empty pokeballs can be thrown or not",
+    "use-display-case": "Controls whether players can use Cobblemon Display Case's",
+    "use-gilded-chests": "Controls whether players can use Cobblemon Gilded Chests",
+    "use-healing-machine": "Controls whether players can use Cobblemon Healing Machine's",
+    "use-pasture": "Controls whether players can use Cobblemon Pastures",
+    "use-pc": "Controls whether players can use Cobblemon PC's",
+    "use-pokedex": "Controls whether players can use Cobblemon's Pokedex",
+    "use-pokerod": "Controls whether players can use Cobblemon Pokerod's",
+    "use-restoration-chamber": "Controls whether players can use Cobblemon Restoration Chamber Multi-blocks"
+  },
+  "flag-names": {
+    "player-attack-pokemon": "Allow Players to Attack Pokemon",
+    "pokemon-spawning": "Allow Pokemon Spawns",
+    "throw-any-pokeball": "Throw any Pokeball (Catching)",
+    "use-display-case": "Use Display Case's",
+    "use-gilded-chests": "Use Gilded Chests",
+    "use-healing-machine": "Use Healing Machine's",
+    "use-pasture": "Use Pastures",
+    "use-pc": "Use PC's",
+    "use-pokedex": "Use Pokedex",
+    "use-pokerod": "Use Pokerod",
+    "use-restoration-chamber": "Use Restoration Chamber Multi-blocks"
+  },
+  "group-descriptions": {
+    "user": "Controls user flags in claim you are standing in."
+  },
+  "group-names": {
+    "user": "User"
+  },
+  "option-descriptions": {},
+  "option-names": {}
+}
