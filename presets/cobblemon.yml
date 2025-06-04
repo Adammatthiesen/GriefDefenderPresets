@@ -71,6 +71,7 @@ cobblemon:
                     owner-mode: true
                     permissions:
                         - flag=interact-block-secondary, target=cobblemon:display_case, source=minecraft:player
+                        - flag=interact-inventory, target=cobblemon:display_case, source=minecraft:player
                 use-gilded-chests:
                     contexts:
                         - gd_claim_default=global
