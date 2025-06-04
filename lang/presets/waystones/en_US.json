@@ -1,0 +1,16 @@
+{
+  "flag-descriptions": {
+    "interact-waystones": "Controls whether players can interact with Waystones"
+  },
+  "flag-names": {
+    "interact-waystones": "Use Waystones"
+  },
+  "group-descriptions": {
+    "user": "Controls user flags in claim you are standing in."
+  },
+  "group-names": {
+    "user": "User"
+  },
+  "option-descriptions": {},
+  "option-names": {}
+}
