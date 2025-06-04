@@ -1,0 +1,38 @@
+waystones:
+    # The plugin id's that this preset depends on in order to load. Note: Plugin id's should be separated by comma. Note: Leave blank if only using GriefDefender flags/options.
+    depend: ""
+    enabled: true
+    groups:
+        user:
+            # Set to true if this definition group is for admin use only.
+            # Note: If admin group, the permission is 'griefdefender.admin.custom.flag.<groupname>
+            # Note: If user group (admin set false), the permission is 'griefdefender.user.definition.flag.<preset>.<group>.<flagname>
+            admin-group: false
+            definitions:
+                interact-waystones:
+                    contexts:
+                        - gd_claim_default=global
+                    default-groups: {}
+                    default-value: true
+                    enabled: true
+                    icon:
+                        enchanted: false
+                        icon-flags:
+                            - hide_attributes
+                        id: waystones:waystone
+                        title: "&6interact-waystones"
+                    owner-mode: true
+                    permissions:
+                        - flag=interact-block-secondary, target=waystones:any, source=minecraft:player
+
+            # Whether definition group is enabled.
+            enabled: true
+            icon:
+                enchanted: false
+                id: waystones:warp_stone
+                title: "&aUser"
+    icon:
+        enchanted: false
+        id: waystones:waystone
+        title: "&dWaystones"
+    version: "1.0"
