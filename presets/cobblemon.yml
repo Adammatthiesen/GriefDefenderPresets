@@ -1,0 +1,200 @@
+cobblemon:
+    # The plugin id's that this preset depends on in order to load. Note: Plugin id's should be separated by comma. Note: Leave blank if only using GriefDefender flags/options.
+    depend: ""
+    enabled: true
+    groups:
+        user:
+            # Set to true if this definition group is for admin use only.
+            # Note: If admin group, the permission is 'griefdefender.admin.custom.flag.<groupname>
+            # Note: If user group (admin set false), the permission is 'griefdefender.user.definition.flag.<preset>.<group>.<flagname>
+            admin-group: false
+            definitions:
+                player-attack-pokemon:
+                    contexts:
+                        - gd_claim_default=global
+                    default-groups: {}
+                    default-value: false
+                    enabled: true
+                    icon:
+                        enchanted: false
+                        icon-flags:
+                            - hide_attributes
+                        id: minecraft:diamond_sword
+                        title: "&6player-attack-pokemon"
+                    owner-mode: true
+                    permissions:
+                        - flag=entity-damage, source=minecraft:player, target=#cobblemon:animal
+                        - flag=entity-damage, target=#cobblemon:pet, source=minecraft:player
+                pokemon-spawning:
+                    contexts:
+                        - gd_claim_default=global
+                    default-groups: {}
+                    default-value: true
+                    enabled: true
+                    icon:
+                        enchanted: false
+                        icon-flags:
+                            - hide_attributes
+                        id: cobblemon:lucky_egg
+                        title: "&6pokemon-spawning"
+                    owner-mode: true
+                    permissions:
+                        - flag=entity-spawn, source=spawnreason:natural, target=#cobblemon:animal
+                throw-any-pokeball:
+                    contexts:
+                        - gd_claim_default=global
+                    default-groups: {}
+                    default-value: true
+                    enabled: true
+                    icon:
+                        enchanted: false
+                        icon-flags:
+                            - hide_attributes
+                        id: cobblemon:ancient_poke_ball
+                        title: "&6throw-any-pokeball"
+                    owner-mode: true
+                    permissions:
+                        - flag=projectile-impact-block, source=cobblemon:empty_pokeball
+                        - flag=projectile-impact-entity, source=cobblemon:empty_pokeball
+                use-display-case:
+                    contexts:
+                        - gd_claim_default=global
+                    default-groups: {}
+                    default-value: false
+                    enabled: true
+                    icon:
+                        enchanted: false
+                        icon-flags:
+                            - hide_attributes
+                        id: cobblemon:display_case
+                        title: "&6use-display-case"
+                    owner-mode: true
+                    permissions:
+                        - flag=interact-block-secondary, target=cobblemon:display_case, source=minecraft:player
+                use-gilded-chests:
+                    contexts:
+                        - gd_claim_default=global
+                    default-groups: {}
+                    default-value: false
+                    enabled: true
+                    icon:
+                        enchanted: false
+                        icon-flags:
+                            - hide_attributes
+                        id: cobblemon:gilded_chest
+                        title: "&6use-gilded-chests"
+                    owner-mode: true
+                    permissions:
+                        - flag=interact-block-secondary, target=cobblemon:gilded_chest, source=minecraft:player
+                        - flag=interact-block-secondary, target=cobblemon:yellow_gilded_chest, source=minecraft:player
+                        - flag=interact-block-secondary, target=cobblemon:green_gilded_chest, source=minecraft:player
+                        - flag=interact-block-secondary, target=cobblemon:blue_gilded_chest, source=minecraft:player
+                        - flag=interact-block-secondary, target=cobblemon:pink_gilded_chest, source=minecraft:player
+                        - flag=interact-block-secondary, target=cobblemon:black_gilded_chest, source=minecraft:player
+                        - flag=interact-block-secondary, target=cobblemon:white_gilded_chest, source=minecraft:player
+                use-healing-machine:
+                    contexts:
+                        - gd_claim_default=global
+                    default-groups: {}
+                    default-value: true
+                    enabled: true
+                    icon:
+                        enchanted: false
+                        icon-flags:
+                            - hide_attributes
+                        id: cobblemon:healing_machine
+                        title: "&6use-healing-machine"
+                    owner-mode: true
+                    permissions:
+                        - flag=interact-block-secondary, target=cobblemon:healing_machine, source=minecraft:player
+                use-pasture:
+                    contexts:
+                        - gd_claim_default=global
+                    default-groups: {}
+                    default-value: false
+                    enabled: true
+                    icon:
+                        enchanted: false
+                        icon-flags:
+                            - hide_attributes
+                        id: cobblemon:pasture
+                        title: "&6use-pasture"
+                    owner-mode: true
+                    permissions:
+                        - flag=interact-block-secondary, target=cobblemon:pasture, source=minecraft:player
+                use-pc:
+                    contexts:
+                        - gd_claim_default=global
+                    default-groups: {}
+                    default-value: true
+                    enabled: true
+                    icon:
+                        enchanted: false
+                        icon-flags:
+                            - hide_attributes
+                        id: cobblemon:pc
+                        title: "&6use-pc"
+                    owner-mode: true
+                    permissions:
+                        - flag=interact-block-secondary, target=cobblemon:pc, source=minecraft:player
+                use-pokedex:
+                    contexts:
+                        - gd_claim_default=global
+                    default-groups: {}
+                    default-value: true
+                    enabled: true
+                    icon:
+                        enchanted: false
+                        icon-flags:
+                            - hide_attributes
+                        id: cobblemon:pokedex_red
+                        title: "&6use-pokedex"
+                    owner-mode: true
+                    permissions:
+                        - flag=interact-item-secondary, target=#cobblemon:pokedex, source=minecraft:player
+                        - flag=interact-block-secondary, used_item=#cobblemon:pokedex, target=#any, source=minecraft:player
+                use-pokerod:
+                    contexts:
+                        - gd_claim_default=global
+                    default-groups: {}
+                    default-value: true
+                    enabled: true
+                    icon:
+                        enchanted: false
+                        icon-flags:
+                            - hide_attributes
+                        id: cobblemon:poke_rod
+                        title: "&6use-pokerod"
+                    owner-mode: true
+                    permissions:
+                        - flag=interact-item-secondary, target=#cobblemon:poke_rods, source=minecraft:player
+                        - flag=interact-block-secondary, target=#any, used_item=#cobblemon:poke_rods, source=minecraft:player
+                use-restoration-chamber:
+                    contexts:
+                        - gd_claim_default=global
+                    default-groups: {}
+                    default-value: false
+                    enabled: true
+                    icon:
+                        enchanted: false
+                        icon-flags:
+                            - hide_attributes
+                        id: cobblemon:fossil_analyzer
+                        title: "&6use-restoration-chamber"
+                    owner-mode: true
+                    permissions:
+                        - flag=interact-block-secondary, target=cobblemon:fossil_analyzer, source=minecraft:player
+                        - flag=interact-block-secondary, target=cobblemon:restoration_tank, source=minecraft:player
+                        - flag=interact-block-secondary, source=minecraft:player, target=cobblemon:monitor
+
+            # Whether definition group is enabled.
+            enabled: true
+            icon:
+                enchanted: false
+                id: cobblemon:poke_ball
+                title: "&aUser"
+    icon:
+        enchanted: false
+        id: cobblemon:ancient_poke_ball
+        title: "&dCobblemon"
+    version: "1.0"
