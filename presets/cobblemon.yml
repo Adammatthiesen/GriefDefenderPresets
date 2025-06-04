@@ -85,13 +85,8 @@ cobblemon:
                         title: "&6use-gilded-chests"
                     owner-mode: true
                     permissions:
-                        - flag=interact-block-secondary, target=cobblemon:gilded_chest, source=minecraft:player
-                        - flag=interact-block-secondary, target=cobblemon:yellow_gilded_chest, source=minecraft:player
-                        - flag=interact-block-secondary, target=cobblemon:green_gilded_chest, source=minecraft:player
-                        - flag=interact-block-secondary, target=cobblemon:blue_gilded_chest, source=minecraft:player
-                        - flag=interact-block-secondary, target=cobblemon:pink_gilded_chest, source=minecraft:player
-                        - flag=interact-block-secondary, target=cobblemon:black_gilded_chest, source=minecraft:player
-                        - flag=interact-block-secondary, target=cobblemon:white_gilded_chest, source=minecraft:player
+                        - flag=interact-block-secondary, target=#cobblemon:gilded_chests, source=minecraft:player
+                        - flag=interact-inventory, target=#cobblemon:gilded_chests, source=minecraft:player
                 use-healing-machine:
                     contexts:
                         - gd_claim_default=global
