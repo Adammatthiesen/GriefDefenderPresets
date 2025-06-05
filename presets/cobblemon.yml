@@ -118,6 +118,7 @@ cobblemon:
                     owner-mode: true
                     permissions:
                         - flag=interact-block-secondary, target=cobblemon:pasture, source=minecraft:player
+                        - flag=interact-inventory, target=cobblemon:pasture, source=minecraft:player
                 use-pc:
                     contexts:
                         - gd_claim_default=global
